@@ -1,0 +1,353 @@
+/* line 2, ../sass/Kanatis.scss */
+.fs50:before {
+  font-size: 50px;
+}
+
+/* line 8, ../sass/Kanatis.scss */
+.fs60:before {
+  font-size: 60px;
+}
+
+/* line 13, ../sass/Kanatis.scss */
+body {
+  font-family: Meiryo;
+  background-color: #3a3a3a;
+}
+
+/* line 18, ../sass/Kanatis.scss */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(25, 25, 25, 0.8);
+  height: 70px;
+  color: #ecf0f1;
+  padding: 5px;
+  margin: 0px;
+}
+/* line 26, ../sass/Kanatis.scss */
+header div {
+  color: antiquewhite;
+  padding-left: 20px;
+  font-size: 36px;
+  margin: 0px;
+  line-height: 15px;
+  font-family: Cursive;
+}
+/* line 33, ../sass/Kanatis.scss */
+header div span {
+  padding: -20px;
+}
+
+/* line 39, ../sass/Kanatis.scss */
+footer {
+  width: 100%;
+  background-color: #2c3e50;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  height: auto !important;
+  in-height: 100%;
+}
+
+/* line 50, ../sass/Kanatis.scss */
+#menu {
+  margin-left: -160px;
+  padding-top: 30px;
+  position: fixed;
+  top: 80;
+  left: 160;
+  width: 320px;
+  bottom: 0;
+  overflow-y: auto;
+  background-color: #2a2a2a;
+}
+
+/* line 61, ../sass/Kanatis.scss */
+#orderSwitch p {
+  margin: 10px 0px 0px 0px;
+  padding: 3px 3px 3px 3px;
+  width: 70px;
+}
+
+/* line 67, ../sass/Kanatis.scss */
+#taskSection {
+  padding: 100px 0px 0px 320px;
+}
+
+/* line 71, ../sass/Kanatis.scss */
+#formSection {
+  padding: 5px 5px 5px 5px;
+  height: 300px;
+}
+
+/* line 75, ../sass/Kanatis.scss */
+#formSection > div {
+  width: 300px;
+  color: white;
+  margin: 5px;
+}
+
+/* line 81, ../sass/Kanatis.scss */
+#formSection form {
+  background-color: floralwhite;
+  height: 100%;
+  padding: 0px 0px 0px 120px;
+}
+
+/* line 86, ../sass/Kanatis.scss */
+#condForm .formTitle {
+  background-color: #3498db;
+}
+
+/* line 89, ../sass/Kanatis.scss */
+#sortForm .formTitle {
+  background-color: #3bbcad;
+}
+
+/* line 92, ../sass/Kanatis.scss */
+#taskCountBox {
+  font-weight: bold;
+  text-align: center;
+  color: floralwhite;
+}
+
+/* line 98, ../sass/Kanatis.scss */
+.task {
+  color: #ecf0f1;
+  margin: 5px 10px 5px 15px;
+  min-width: 350px;
+  max-width: 400px;
+}
+
+/* line 104, ../sass/Kanatis.scss */
+.taskTable {
+  color: white;
+}
+
+/* line 107, ../sass/Kanatis.scss */
+.taskTable td {
+  padding: 5px 5px 5px 5px;
+}
+
+/* line 114, ../sass/Kanatis.scss */
+.taskHead p {
+  padding-top: 3px;
+}
+
+/* line 118, ../sass/Kanatis.scss */
+#taskCountBox div {
+  width: 30%;
+  float: left;
+}
+
+/* line 129, ../sass/Kanatis.scss */
+#showCommentBtn {
+  width: 120px;
+  height: 120px;
+  background-color: floralwhite;
+  margin: 15px;
+}
+
+/* line 132, ../sass/Kanatis.scss */
+#hideCommentBtn {
+  width: 120px;
+  height: 120px;
+  background-color: floralwhite;
+  margin: 15px;
+}
+
+/* line 135, ../sass/Kanatis.scss */
+#downloadBtn {
+  width: 120px;
+  height: 120px;
+  background-color: floralwhite;
+  margin: 15px;
+}
+
+/* line 138, ../sass/Kanatis.scss */
+#resetTodayTimeBtn {
+  width: 120px;
+  height: 120px;
+  background-color: floralwhite;
+  margin: 15px;
+}
+
+/* line 142, ../sass/Kanatis.scss */
+#sortForm fieldset {
+  padding-top: 25px;
+}
+
+/* line 145, ../sass/Kanatis.scss */
+#newTaskForm fieldset {
+  padding-top: 15px;
+}
+
+/* line 148, ../sass/Kanatis.scss */
+#condForm fieldset {
+  padding-top: 25px;
+}
+
+/* line 152, ../sass/Kanatis.scss */
+#addTaskBtn {
+  font-size: 12px;
+  border: none;
+  color: #d95151;
+  background-color: #FBCBCB;
+}
+
+/* line 159, ../sass/Kanatis.scss */
+.inputFieldSet div {
+  padding-top: 5px;
+}
+
+/* line 163, ../sass/Kanatis.scss */
+#ascBtn:hover {
+  opacity: 0.7;
+}
+
+/* line 167, ../sass/Kanatis.scss */
+.blur {
+  -webkit-filter: blur(5px);
+}
+
+/* line 171, ../sass/Kanatis.scss */
+.wall {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* line 180, ../sass/Kanatis.scss */
+.taskHead {
+  position: relative;
+  margin: 0px;
+  padding: 5px 10px 5px 15px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+/* line 187, ../sass/Kanatis.scss */
+.taskHead .taskTodayTime {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+/* line 193, ../sass/Kanatis.scss */
+.taskHead p {
+  margin: 0px;
+}
+
+/* line 197, ../sass/Kanatis.scss */
+.taskBody {
+  margin: 0px;
+  padding: 5px 10px 5px 15px;
+}
+
+/* line 202, ../sass/Kanatis.scss */
+.commentForm {
+  padding: 10px 10px 5px 15px;
+}
+
+/* line 206, ../sass/Kanatis.scss */
+.commentBody {
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+/* line 211, ../sass/Kanatis.scss */
+.date {
+  text-align: right;
+  font-size: 8px;
+  margin: 0px;
+}
+
+/* line 217, ../sass/Kanatis.scss */
+.commentDeleteBtn {
+  text-align: right;
+  margin: 0px;
+  padding: 5px 10px 0px 0px;
+}
+
+/* line 223, ../sass/Kanatis.scss */
+.taskDeleteBtn {
+  text-align: right;
+  margin: 0px;
+}
+
+/* line 228, ../sass/Kanatis.scss */
+.toggleComment {
+  text-align: right;
+  margin: 0px;
+}
+
+/* line 233, ../sass/Kanatis.scss */
+.formTitle {
+  height: 100%;
+  width: 110px;
+  background-color: indianred;
+}
+
+/* line 239, ../sass/Kanatis.scss */
+.formTitle:hover {
+  opacity: 0.9;
+}
+
+/* line 246, ../sass/Kanatis.scss */
+.formTitle > p {
+  padding: 90px 0px 10px 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+/* line 251, ../sass/Kanatis.scss */
+.formTitle > img {
+  padding: 80px 10px 0px 10px;
+  margin: 0px;
+}
+
+/* line 257, ../sass/Kanatis.scss */
+#csvSection {
+  color: #d05353;
+  z-index: 1;
+  position: absolute;
+  top: 200px;
+  left: 560px;
+  background-color: bisque;
+  padding: 30px;
+  width: 700px;
+}
+
+/* line 268, ../sass/Kanatis.scss */
+.sashWrap {
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 80px;
+}
+
+/* line 276, ../sass/Kanatis.scss */
+.sash {
+  position: absolute;
+  z-index: 5;
+  top: 0px;
+  left: -15px;
+  width: 100px;
+  padding: 5px 10px 5px 5px;
+  letter-spacing: 2px;
+  background: #FF5E58;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.7);
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+}
