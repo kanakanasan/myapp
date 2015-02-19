@@ -463,7 +463,7 @@ function toggleTimer(self){
     $('.taskTodayTime').css('font-size', '').css('color', '');
     $('.taskHead').css('background-color', '');
     $('.sashWrap').hide(300);
-    $(self).attr('data-active', 'false');
+    $('.taskHead').attr('data-active', 'false');
     
     $('.taskTodayTime', self).css('font-size', '40px').css('color', 'rgb(252, 248, 143)');
     $(self).css('background-color', 'rgb(243, 127, 127)');
