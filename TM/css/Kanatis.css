@@ -120,28 +120,32 @@ footer {
   float: left;
 }
 
-/* line 104, ../sass/Kanatis.scss */
+/* line 105, ../sass/Kanatis.scss */
 .taskTable {
   color: white;
 }
-
 /* line 107, ../sass/Kanatis.scss */
+.taskTable tr:nth-child(5) {
+  height: 55px;
+}
+
+/* line 111, ../sass/Kanatis.scss */
 .taskTable td {
   padding: 5px 5px 5px 5px;
 }
 
-/* line 114, ../sass/Kanatis.scss */
+/* line 118, ../sass/Kanatis.scss */
 .taskHead p {
   padding-top: 3px;
 }
 
-/* line 118, ../sass/Kanatis.scss */
+/* line 122, ../sass/Kanatis.scss */
 #taskCountBox div {
   width: 30%;
   float: left;
 }
 
-/* line 129, ../sass/Kanatis.scss */
+/* line 133, ../sass/Kanatis.scss */
 #showCommentBtn {
   width: 120px;
   height: 120px;
@@ -149,7 +153,7 @@ footer {
   margin: 15px;
 }
 
-/* line 132, ../sass/Kanatis.scss */
+/* line 136, ../sass/Kanatis.scss */
 #hideCommentBtn {
   width: 120px;
   height: 120px;
@@ -157,7 +161,7 @@ footer {
   margin: 15px;
 }
 
-/* line 135, ../sass/Kanatis.scss */
+/* line 139, ../sass/Kanatis.scss */
 #downloadBtn {
   width: 120px;
   height: 120px;
@@ -165,7 +169,7 @@ footer {
   margin: 15px;
 }
 
-/* line 138, ../sass/Kanatis.scss */
+/* line 142, ../sass/Kanatis.scss */
 #resetTodayTimeBtn {
   width: 120px;
   height: 120px;
@@ -173,22 +177,22 @@ footer {
   margin: 15px;
 }
 
-/* line 142, ../sass/Kanatis.scss */
+/* line 146, ../sass/Kanatis.scss */
 #sortForm fieldset {
   padding-top: 25px;
 }
 
-/* line 145, ../sass/Kanatis.scss */
+/* line 149, ../sass/Kanatis.scss */
 #newTaskForm fieldset {
   padding-top: 15px;
 }
 
-/* line 148, ../sass/Kanatis.scss */
+/* line 152, ../sass/Kanatis.scss */
 #condForm fieldset {
   padding-top: 25px;
 }
 
-/* line 152, ../sass/Kanatis.scss */
+/* line 156, ../sass/Kanatis.scss */
 #addTaskBtn {
   font-size: 12px;
   border: none;
@@ -196,22 +200,22 @@ footer {
   background-color: #FBCBCB;
 }
 
-/* line 159, ../sass/Kanatis.scss */
+/* line 163, ../sass/Kanatis.scss */
 .inputFieldSet div {
   padding-top: 5px;
 }
 
-/* line 163, ../sass/Kanatis.scss */
+/* line 167, ../sass/Kanatis.scss */
 #ascBtn:hover {
   opacity: 0.7;
 }
 
-/* line 167, ../sass/Kanatis.scss */
+/* line 171, ../sass/Kanatis.scss */
 .blur {
   -webkit-filter: blur(5px);
 }
 
-/* line 171, ../sass/Kanatis.scss */
+/* line 175, ../sass/Kanatis.scss */
 .wall {
   position: absolute;
   height: 100%;
@@ -221,7 +225,7 @@ footer {
   z-index: 1;
 }
 
-/* line 180, ../sass/Kanatis.scss */
+/* line 184, ../sass/Kanatis.scss */
 .taskHead {
   position: relative;
   margin: 0px;
@@ -230,87 +234,87 @@ footer {
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
-/* line 187, ../sass/Kanatis.scss */
+/* line 191, ../sass/Kanatis.scss */
 .taskHead .taskTodayTime {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
 }
 
-/* line 193, ../sass/Kanatis.scss */
+/* line 197, ../sass/Kanatis.scss */
 .taskHead p {
   margin: 0px;
 }
 
-/* line 197, ../sass/Kanatis.scss */
+/* line 201, ../sass/Kanatis.scss */
 .taskBody {
   margin: 0px;
   padding: 5px 10px 5px 15px;
 }
 
-/* line 202, ../sass/Kanatis.scss */
+/* line 206, ../sass/Kanatis.scss */
 .commentForm {
   padding: 10px 10px 5px 15px;
 }
 
-/* line 206, ../sass/Kanatis.scss */
+/* line 210, ../sass/Kanatis.scss */
 .commentBody {
   margin: 0px;
   padding: 0px 0px 0px 0px;
 }
 
-/* line 211, ../sass/Kanatis.scss */
+/* line 215, ../sass/Kanatis.scss */
 .date {
   text-align: right;
   font-size: 8px;
   margin: 0px;
 }
 
-/* line 217, ../sass/Kanatis.scss */
+/* line 221, ../sass/Kanatis.scss */
 .commentDeleteBtn {
   text-align: right;
   margin: 0px;
   padding: 5px 10px 0px 0px;
 }
 
-/* line 223, ../sass/Kanatis.scss */
+/* line 227, ../sass/Kanatis.scss */
 .taskDeleteBtn {
   text-align: right;
   margin: 0px;
 }
 
-/* line 228, ../sass/Kanatis.scss */
+/* line 232, ../sass/Kanatis.scss */
 .toggleComment {
   text-align: right;
   margin: 0px;
 }
 
-/* line 233, ../sass/Kanatis.scss */
+/* line 237, ../sass/Kanatis.scss */
 .formTitle {
   height: 100%;
   width: 110px;
   background-color: indianred;
 }
 
-/* line 239, ../sass/Kanatis.scss */
+/* line 243, ../sass/Kanatis.scss */
 .formTitle:hover {
   opacity: 0.9;
 }
 
-/* line 246, ../sass/Kanatis.scss */
+/* line 250, ../sass/Kanatis.scss */
 .formTitle > p {
   padding: 90px 0px 10px 0px;
   margin: 0px;
   text-align: center;
 }
 
-/* line 251, ../sass/Kanatis.scss */
+/* line 255, ../sass/Kanatis.scss */
 .formTitle > img {
   padding: 80px 10px 0px 10px;
   margin: 0px;
 }
 
-/* line 257, ../sass/Kanatis.scss */
+/* line 261, ../sass/Kanatis.scss */
 #csvSection {
   color: #d05353;
   z-index: 1;
@@ -322,7 +326,7 @@ footer {
   width: 700px;
 }
 
-/* line 268, ../sass/Kanatis.scss */
+/* line 272, ../sass/Kanatis.scss */
 .sashWrap {
   position: absolute;
   overflow: hidden;
@@ -332,7 +336,7 @@ footer {
   height: 80px;
 }
 
-/* line 276, ../sass/Kanatis.scss */
+/* line 280, ../sass/Kanatis.scss */
 .sash {
   position: absolute;
   z-index: 5;

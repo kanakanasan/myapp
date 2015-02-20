@@ -104,6 +104,9 @@ footer {
 }
 .taskTable {
 	color: white;
+    tr:nth-child(5) {
+        height: 55px;
+    }
 }
 .taskTable td {
 	padding: 5px 5px 5px 5px;

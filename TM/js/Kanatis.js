@@ -460,12 +460,12 @@ function toggleTimer(self){
     myStart=new Date();  // スタート時間を退避
     TodayTimeStr = $(self).parents('.task').find('.taskTodayTime').text();
     
-    $('.taskTodayTime').css('font-size', '').css('color', '');
+    $('.taskTodayTime').css('font-size', '').css('color', '').css('letter-spacing', '');;
     $('.taskHead').css('background-color', '');
     $('.sashWrap').hide(300);
     $('.taskHead').attr('data-active', 'false');
     
-    $('.taskTodayTime', self).css('font-size', '40px').css('color', 'rgb(252, 248, 143)');
+    $('.taskTodayTime', self).css('font-size', '30px').css('color', 'rgb(252, 248, 143)').css('letter-spacing', '5px');
     $(self).css('background-color', 'rgb(243, 127, 127)');
     $('.sashWrap',self).show(300);
     $(self).attr('data-active', 'true');
@@ -480,7 +480,7 @@ function toggleTimer(self){
     timerTmp = setInterval(function() {myDisp($(self).parents('.task').find('.taskTodayTime'), startTime)},1000);
   }else{                 // Stopボタンを押した
     myDisp();
-    $('.taskTodayTime', self).css('font-size', '').css('color', '');
+    $('.taskTodayTime', self).css('font-size', '').css('color', '').css('letter-spacing', '');
     $(self).css('background-color', '');
     $('.sashWrap',self).hide(300);
     $(self).attr('data-active', 'false');
