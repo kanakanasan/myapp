@@ -28,6 +28,7 @@ Kanatis.prototype = {
 	init: function (opt) {
 		var self = this;
 		
+        self.showHowTo(self);
 		self.setTask();
 		self.setCounter();
 		self.setEventListener();
@@ -66,8 +67,8 @@ Kanatis.prototype = {
 		$('input[name="sortType"]:radio').change(function(){ self.sortTask(); });
 		$(document).delegate('#ascBtn,#descBtn','click', function(){ self.sortTaskOrder(this); });
 		//タスクデータ変更処理
-		$(document).delegate('.taskTotalTime, taskTodayTime, .projectName, .ticketId, .taskYoteiTime,.taskTitle, .taskCategory, .taskLimit','click blur', function(){ self.updateTaskData(this); });
-		$(document).delegate('.taskTotalTime, taskTodayTIme, .projectName, .ticketId, .taskYoteiTime, input.taskTitle, input.taskCategory, input.taskLimit','keydown', function(e){
+		$(document).delegate('.taskTotalTime, .taskTodayTime, .projectName, .ticketId, .taskYoteiTime, .taskTitle, .taskCategory, .taskLimit','click blur', function(){ self.updateTaskData(this); });
+		$(document).delegate('.taskTotalTime, .taskTodayTime, .projectName, .ticketId, .taskYoteiTime, input.taskTitle, input.taskCategory, input.taskLimit','keydown', function(e){
 			if (e.keyCode === 13) {
 				self.updateTaskData(this); } 
 			});
@@ -75,8 +76,9 @@ Kanatis.prototype = {
 		$(window).on("beforeunload",function(e){ self.saveTask(); });
 		
 		$(document).delegate('.taskHead','click', function(){toggleTimer(this)});
-		$(document).delegate('.downloadCsv','click', function(){ self.downloadCsv(this); });
-		$(document).delegate('.closeCsv','click', function(){ self.closeCsv(this); });
+		$(document).delegate('.downloadCsv','click', function(){ self.downloadCsv(self); });
+		$(document).delegate('#howToBtn','click', function(){ self.showModal('#howToSection'); });
+		$(document).delegate('.closeModal, .wall','click', function(){ self.closeModal('.modal'); });
 		$(document).delegate('#resetTodayTimeBtn','click', function(){ self.resetTodayTime(this); });
 	},
 	resetTodayTime: function(self) {
@@ -88,12 +90,23 @@ Kanatis.prototype = {
 			});
 		}
 	},
-	closeCsv: function(self) {
-		$(self).parents('section').fadeOut(100);
+    showHowTo: function() {
+		if (localStorage.get('isFirst') === null) {
+            this.showModal('#howToSection');
+            localStorage.set('isFirst', true);
+        }
+    },
+    showModal: function(target) {
+		$(target).fadeIn(150);
+		$('.wall').fadeIn(150);
+		$('header, #taskSection, #menu').addClass('blur');        
+    },
+	closeModal: function(target) {
+		$(target).fadeOut(100);
 		$('.wall').fadeOut(100);
 		$('header, #taskSection, #menu').removeClass('blur');
 	},
-	downloadCsv: function() {
+	downloadCsv: function(self) {
     	
 		var taskData = [];
 		taskData.push('id,プロジェクト,ユーザ,チケットＩＤ,稼働時間,コメント,行動,日付');
@@ -134,10 +147,7 @@ Kanatis.prototype = {
 		);
 		
 		$('#csvSection pre').text(taskData.join('\n'));
-		$('#csvSection').fadeIn(100);
-		$('.wall').fadeIn(100);
-		$('header, #taskSection, #menu').addClass('blur');
-		
+        self.showModal('#csvSection');		
 	},
 	getSortableOption: function(){
 		var self = this;

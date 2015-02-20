@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta charset='UTF8'>
-<title>Zen Task</title>
+<title>ZenTask</title>
 <link rel='stylesheet' href='http://yui.yahooapis.com/pure/0.2.0/pure-min.css'>
 <link rel='stylesheet' href='css/common.css'>
 <link rel='stylesheet' href='css/Kanatis.css'>
@@ -21,7 +21,7 @@ $(function(){
 </head>
 <body>
 <header>
-	<div><i class="fa fa-graduation-cap fs60"></i><span>Zen Task</span></div>
+	<div><i class="fa fa-graduation-cap fs60"></i><span>ZenTask</span></div>
 </header>
 <div id="menu" class="">
 	<section id='formSection'>
@@ -82,10 +82,11 @@ $(function(){
 				</fieldset>
 			</form>
 		</div>
-	<button id='showCommentBtn' class='pure-button showCommentAll '><i class="fa fa-expand fs50"></i><br>Show</button>
-	<button id='hideCommentBtn' class='pure-button hideCommentAll '><i class="fa fa-compress fs50"></i><br>Hide</button>
-	<button id='downloadBtn' class='pure-button downloadCsv'><i class="fa fa-download fs50"></i><br>CSV</button>
-	<button id='resetTodayTimeBtn' class='pure-button'><i class="fa fa-clock-o fs50"></i><br>ResetTime</button>
+	<button id='showCommentBtn' class='menuBtn pure-button showCommentAll '><i class="fa fa-expand fs50"></i><br>Show</button>
+	<button id='hideCommentBtn' class='menuBtn pure-button hideCommentAll '><i class="fa fa-compress fs50"></i><br>Hide</button>
+	<button id='downloadBtn' class='menuBtn pure-button downloadCsv'><i class="fa fa-download fs50"></i><br>CSV</button>
+	<button id='resetTodayTimeBtn' class='menuBtn pure-button'><i class="fa fa-clock-o fs50"></i><br>Reset</button>
+	<button id='howToBtn' class='menuBtn pure-button'><i class="fa fa-lightbulb-o fs50"></i><br>HowTo</button>
 	</section>
 </div>
 
@@ -151,7 +152,7 @@ $(function(){
 					</tr>
 					<tr>
 						<td>今日の作業時間</td>
-						<td><span class='taskTodayTime'>00:00:00</span></td>
+						<td><span class=' taskTodayTime'>00:00:00</span></td>
 					</tr>
 				</tbody>
 			</table>
@@ -184,8 +185,17 @@ $(function(){
 	</div>
 </section>
 
-<section id='csvSection' style='display: none;'>
-	<p class='closeCsv'>×close</p>
+<section id='csvSection' class='modal' style='display: none;'>
+	<p class='closeModal'><i class="fa fa-times-circle"></i></p>
+    <p class='title'><span><i class="fa fa-file-text-o"></i>Task CSV</span></p>
+	<pre>
+	</pre>
+</section>
+
+<section id='howToSection' class='modal' style='display: none;'>
+	<p class='closeModal'><i class="fa fa-times-circle"></i></p>
+    <p class='logo'><i class="fa fa-graduation-cap"></i></p>
+    <p class='title'><span>Welcome ZenTask !!</span></p>
 	<pre>
 	</pre>
 </section>

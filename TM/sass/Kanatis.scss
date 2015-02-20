@@ -10,6 +10,10 @@
 	}
 }
 
+html * {
+    letter-spacing: 1px;   
+}
+
 body {
 	font-family:Meiryo;
 	background-color: #3a3a3a;
@@ -71,7 +75,11 @@ footer {
 #formSection {
 	padding: 5px 5px 5px 5px;
 	height: 300px;
+    .menuBtn {
+        letter-spacing: 2.5px;
+    }
 }
+
 #formSection > div {
 	width: 300px;
 	color: white;
@@ -99,7 +107,7 @@ footer {
 	color: #ecf0f1;
 	margin: 5px 10px 5px 15px;
 	min-width: 350px;
-	max-width: 400px;
+	max-width: 450px;
 	float: left;
 }
 .taskTable {
@@ -142,6 +150,9 @@ footer {
 #resetTodayTimeBtn {
 	@include controlBtn();
 }
+#howToBtn {
+	@include controlBtn();
+}
 
 #sortForm fieldset {
 	padding-top: 25px;
@@ -161,7 +172,7 @@ footer {
 }
 
 .inputFieldSet div{
-	padding-top: 5px;
+	padding-top: 7px;
 }
 
 #ascBtn:hover {
@@ -259,14 +270,80 @@ footer {
 
 
 #csvSection {
-	color: rgb(208, 83, 83);
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+	color: #F25C55;
 	z-index: 1;
 	position: absolute;
-	top: 200px;
-	left: 560px;
-	background-color: bisque;
+	background-color: rgba(255, 228, 196, 0.88);
 	padding: 30px;
 	width: 700px;
+    box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
+    text-align: center;
+    -webkit-box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
+    -moz-box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
+    .title {
+        font-size: 20px;
+        letter-spacing: 3px;
+        margin: 0px;
+        overflow: hidden;
+        text-align: center;
+        i {
+            font-size: 27px;
+            padding-right: 10px;
+        }
+    }
+    .closeModal {
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        font-size: 22px;
+        margin: 0px;
+    } 
+    
+}
+
+#howToSection {
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+	color: #F25C55;
+	z-index: 1;
+	position: absolute;
+	background-color: rgba(255, 228, 196, 0.88);
+	padding: 30px;
+	width: 70%;
+    height: 60%;
+    box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
+    text-align: center;
+    -webkit-box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
+    -moz-box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
+    .title {
+        font-size: 50px;
+        letter-spacing: 3px;
+        margin: 0px;
+        overflow: hidden;
+        text-align: center;
+        i {
+            font-size: 80px;
+            padding-right: 10px;
+        }
+    }
+    .logo {
+        margin-top: 80px;
+        i {
+            font-size: 280px;   
+        }
+    }
+    .closeModal {
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        font-size: 22px;
+        margin: 0px;
+    } 
+    
 }
 
 .sashWrap {
