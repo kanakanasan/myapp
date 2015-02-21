@@ -11,7 +11,7 @@
 }
 
 html * {
-    letter-spacing: 1px;   
+	letter-spacing: 1px;
 }
 
 body {
@@ -27,6 +27,7 @@ header {
 	color: #ecf0f1;
 	padding: 5px;
 	margin: 0px;
+	z-index: 50;
 	div {
 		color: antiquewhite;
 	    padding-left: 20px;
@@ -75,9 +76,9 @@ footer {
 #formSection {
 	padding: 5px 5px 5px 5px;
 	height: 300px;
-    .menuBtn {
-        letter-spacing: 2.5px;
-    }
+	.menuBtn {
+		letter-spacing: 2.5px;
+	}
 }
 
 #formSection > div {
@@ -112,9 +113,9 @@ footer {
 }
 .taskTable {
 	color: white;
-    tr:nth-child(5) {
-        height: 55px;
-    }
+	tr:nth-child(5) {
+		height: 55px;
+	}
 }
 .taskTable td {
 	padding: 5px 5px 5px 5px;
@@ -270,80 +271,80 @@ footer {
 
 
 #csvSection {
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -50%);
 	color: #F25C55;
 	z-index: 1;
 	position: absolute;
 	background-color: rgba(255, 228, 196, 0.88);
 	padding: 30px;
 	width: 700px;
-    box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
-    text-align: center;
-    -webkit-box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
-    -moz-box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
-    .title {
-        font-size: 20px;
-        letter-spacing: 3px;
-        margin: 0px;
-        overflow: hidden;
-        text-align: center;
-        i {
-            font-size: 27px;
-            padding-right: 10px;
-        }
-    }
-    .closeModal {
-        position: absolute;
-        right: 30px;
-        top: 15px;
-        font-size: 22px;
-        margin: 0px;
-    } 
-    
+	box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
+	text-align: center;
+	-webkit-box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
+	-moz-box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
+	.title {
+		font-size: 20px;
+		letter-spacing: 3px;
+		margin: 0px;
+		overflow: hidden;
+		text-align: center;
+		i {
+			font-size: 27px;
+			padding-right: 10px;
+		}
+	}
+	.closeModal {
+		position: absolute;
+		right: 30px;
+		top: 15px;
+		font-size: 22px;
+		margin: 0px;
+	}
+
 }
 
 #howToSection {
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
 	color: #F25C55;
 	z-index: 1;
 	position: absolute;
 	background-color: rgba(255, 228, 196, 0.88);
 	padding: 30px;
 	width: 70%;
-    height: 60%;
-    box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
-    text-align: center;
-    -webkit-box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
-    -moz-box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
-    .title {
-        font-size: 50px;
-        letter-spacing: 3px;
-        margin: 0px;
-        overflow: hidden;
-        text-align: center;
-        i {
-            font-size: 80px;
-            padding-right: 10px;
-        }
-    }
-    .logo {
-        margin-top: 80px;
-        i {
-            font-size: 280px;   
-        }
-    }
-    .closeModal {
-        position: absolute;
-        right: 30px;
-        top: 15px;
-        font-size: 22px;
-        margin: 0px;
-    } 
-    
+	height: 60%;
+	box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
+	text-align: center;
+	-webkit-box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
+	-moz-box-shadow:rgba(201, 163, 118, 1) 1px -1px 30px 9px;
+	.title {
+		font-size: 50px;
+		letter-spacing: 3px;
+		margin: 0px;
+		overflow: hidden;
+		text-align: center;
+		i {
+			font-size: 80px;
+			padding-right: 10px;
+		}
+	}
+	.logo {
+		margin-top: 80px;
+		i {
+			font-size: 280px;
+		}
+	}
+	.closeModal {
+		position: absolute;
+		right: 30px;
+		top: 15px;
+		font-size: 22px;
+		margin: 0px;
+	}
+
 }
 
 .sashWrap {

@@ -28,6 +28,7 @@ header {
   color: #ecf0f1;
   padding: 5px;
   margin: 0px;
+  z-index: 50;
 }
 /* line 30, ../sass/Kanatis.scss */
 header div {
