@@ -94,7 +94,11 @@ Kanatis.prototype = {
 		if (localStorage.get('isFirst') === null) {
             this.showModal('#howToSection');
             localStorage.set('isFirst', true);
+           
         }
+        setTimeout(function(){
+            	$('#slider3').bxSlider({ pager: true });
+        }, 1300);
     },
     showModal: function(target) {
 		$(target).fadeIn(150);
