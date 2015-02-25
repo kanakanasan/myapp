@@ -30,9 +30,11 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
+    /* custom 不要なのでコメントアウト 
 	-moz-box-shadow: 0 0 5px #ccc;
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;
+    */
 	left: -5px;
 	
 	/*fix other elements on the page moving (on Chrome)*/
@@ -200,4 +202,8 @@
 	display: block;
 	font-size: .85em;
 	padding: 10px;
+}
+
+.bx-controls bx-has-pager bx-has-controls-direction {
+     padding-top: 50px;   
 }

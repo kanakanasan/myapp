@@ -249,7 +249,7 @@ footer {
 .formTitle {
 	height: 100%;
 	width: 110px;
-	background-color: indianred;
+	background-color: #F25C55;
 }
 
 .formTitle:hover {
@@ -306,9 +306,7 @@ footer {
 }
 
 #howToSection {
-	left: 50%;
-	top: 45%;
-	transform: translate(-50%, -50%);
+	left: 15%;
 	color: #F25C55;
 	z-index: 1;
 	position: absolute;
@@ -334,11 +332,12 @@ footer {
     .body {
         float: left;
         padding: 20px;
+        width: 240px;
         .subTitle {
             font-size: 20px;
         }
         i {
-            color: indianred;
+            color: #F25C55;
         }
     }
     .logo {
@@ -358,9 +357,29 @@ footer {
         margin-top: 70px;
         > div {
             margin: 50 auto 0;
-            width: 90%;
+            display: inline-block;
             color: rgb(97, 97, 97);
         }
+        pre {
+            color: gray;
+            font-size: 14px;   
+            text-align: left;
+        }
+    }
+    .page3 {
+        position: relative;
+        i {
+            font-size: 400px;
+            position: absolute;
+            left: 30%;
+            top: 37px;
+            color: rgba(230, 13, 13, 0.18)
+        }
+        div {
+            padding-top: 150px;
+            font-size: 20px;
+        }
+            
     }
 }
 
