@@ -379,7 +379,7 @@ footer {
   background-color: rgba(255, 228, 196, 0.88);
   padding: 30px;
   width: 70%;
-  height: 60%;
+  height: 70%;
   slise-shadow: #c9a376 1px -1px 30px 9px;
   text-align: center;
   -webkit-box-shadow: #c9a376 1px -1px 30px 9px;
@@ -412,15 +412,11 @@ footer {
 #howToSection .body i {
   color: #F25C55;
 }
-/* line 343, ../sass/Kanatis.scss */
-#howToSection .logo {
-  margin-top: 80px;
+/* line 344, ../sass/Kanatis.scss */
+#howToSection .logo img {
+  margin: auto;
 }
-/* line 345, ../sass/Kanatis.scss */
-#howToSection .logo i {
-  font-size: 280px;
-}
-/* line 349, ../sass/Kanatis.scss */
+/* line 348, ../sass/Kanatis.scss */
 #howToSection .closeModal {
   position: absolute;
   right: 30px;
@@ -428,27 +424,27 @@ footer {
   font-size: 22px;
   margin: 0px;
 }
-/* line 356, ../sass/Kanatis.scss */
+/* line 355, ../sass/Kanatis.scss */
 #howToSection .page2 {
   margin-top: 70px;
 }
-/* line 358, ../sass/Kanatis.scss */
+/* line 357, ../sass/Kanatis.scss */
 #howToSection .page2 > div {
   margin: 50 auto 0;
   display: inline-block;
   color: #616161;
 }
-/* line 363, ../sass/Kanatis.scss */
+/* line 362, ../sass/Kanatis.scss */
 #howToSection .page2 pre {
   color: gray;
   font-size: 14px;
   text-align: left;
 }
-/* line 369, ../sass/Kanatis.scss */
+/* line 368, ../sass/Kanatis.scss */
 #howToSection .page3 {
   position: relative;
 }
-/* line 371, ../sass/Kanatis.scss */
+/* line 370, ../sass/Kanatis.scss */
 #howToSection .page3 i {
   font-size: 400px;
   position: absolute;
@@ -456,13 +452,13 @@ footer {
   top: 37px;
   color: rgba(230, 13, 13, 0.18);
 }
-/* line 378, ../sass/Kanatis.scss */
+/* line 377, ../sass/Kanatis.scss */
 #howToSection .page3 div {
   padding-top: 150px;
   font-size: 20px;
 }
 
-/* line 386, ../sass/Kanatis.scss */
+/* line 385, ../sass/Kanatis.scss */
 .sashWrap {
   position: absolute;
   overflow: hidden;
@@ -472,7 +468,7 @@ footer {
   height: 80px;
 }
 
-/* line 394, ../sass/Kanatis.scss */
+/* line 393, ../sass/Kanatis.scss */
 .sash {
   position: absolute;
   z-index: 5;
