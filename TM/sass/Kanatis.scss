@@ -35,8 +35,9 @@ header {
 		margin: 0px;
 		line-height: 15px;
 		font-family: Cursive;
-		span {
-			padding: -20px;
+        display:inline-flex;
+		p {
+			padding-left: 20px;
 		}
 	}
 }
@@ -93,7 +94,7 @@ footer {
 	padding: 0px 0px 0px 120px;
 }
 #condForm .formTitle {
-	background-color: #3498db;
+	background-color: #F25C55;
 }
 #sortForm .formTitle {
 	background-color: rgb(59, 188, 173);
@@ -307,6 +308,7 @@ footer {
 
 #howToSection {
 	left: 15%;
+    top: 15%;
 	color: #F25C55;
 	z-index: 1;
 	position: absolute;
@@ -411,4 +413,10 @@ footer {
 	transform: rotate(-30deg);
 	-webkit-transform: rotate(-30deg);
 	-moz-transform: rotate(-30deg);
+}
+
+.zeroHit {
+    margin: 100px;
+    color: rgb(229, 99, 99);
+    font-size: 20px;
 }
