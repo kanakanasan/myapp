@@ -98,7 +98,7 @@ Kanatis.prototype = {
         }
         setTimeout(function(){
             	$('#slider3').bxSlider({ pager: true });
-        }, 1400);
+        }, 140);
     },
     showModal: function(target) {
 		$(target).fadeIn(150);
